@@ -1,0 +1,14 @@
+C:\Projects\IDP\Starter Files\ImageGallery\src\ImageGallery.API\bin\Debug\netcoreapp2.0\ImageGallery.API.deps.json
+C:\Projects\IDP\Starter Files\ImageGallery\src\ImageGallery.API\bin\Debug\netcoreapp2.0\ImageGallery.API.runtimeconfig.json
+C:\Projects\IDP\Starter Files\ImageGallery\src\ImageGallery.API\bin\Debug\netcoreapp2.0\ImageGallery.API.runtimeconfig.dev.json
+C:\Projects\IDP\Starter Files\ImageGallery\src\ImageGallery.API\bin\Debug\netcoreapp2.0\ImageGallery.API.dll
+C:\Projects\IDP\Starter Files\ImageGallery\src\ImageGallery.API\bin\Debug\netcoreapp2.0\ImageGallery.API.pdb
+C:\Projects\IDP\Starter Files\ImageGallery\src\ImageGallery.API\bin\Debug\netcoreapp2.0\ImageGallery.Model.dll
+C:\Projects\IDP\Starter Files\ImageGallery\src\ImageGallery.API\bin\Debug\netcoreapp2.0\ImageGallery.Model.pdb
+C:\Projects\IDP\Starter Files\ImageGallery\src\ImageGallery.API\obj\Debug\netcoreapp2.0\ImageGallery.API.csprojAssemblyReference.cache
+C:\Projects\IDP\Starter Files\ImageGallery\src\ImageGallery.API\obj\Debug\netcoreapp2.0\ImageGallery.API.csproj.CoreCompileInputs.cache
+C:\Projects\IDP\Starter Files\ImageGallery\src\ImageGallery.API\obj\Debug\netcoreapp2.0\ImageGallery.API.AssemblyInfoInputs.cache
+C:\Projects\IDP\Starter Files\ImageGallery\src\ImageGallery.API\obj\Debug\netcoreapp2.0\ImageGallery.API.AssemblyInfo.cs
+C:\Projects\IDP\Starter Files\ImageGallery\src\ImageGallery.API\obj\Debug\netcoreapp2.0\ImageGallery.API.csproj.CopyComplete
+C:\Projects\IDP\Starter Files\ImageGallery\src\ImageGallery.API\obj\Debug\netcoreapp2.0\ImageGallery.API.dll
+C:\Projects\IDP\Starter Files\ImageGallery\src\ImageGallery.API\obj\Debug\netcoreapp2.0\ImageGallery.API.pdb
