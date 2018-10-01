@@ -6,12 +6,12 @@ using System.Security.Claims;
 
 namespace Nobly.IDP
 {
-  public static class Config
-  {
-    // test users
-    public static List<TestUser> GetUsers()
+    public static class Config
     {
-      return new List<TestUser>
+        // test users
+        public static List<TestUser> GetUsers()
+        {
+            return new List<TestUser>
        {
            new TestUser
            {
@@ -42,12 +42,12 @@ namespace Nobly.IDP
                }
            }
        };
-    }
+        }
 
-    // identity-related resources (scopes)
-    public static IEnumerable<IdentityResource> GetIdentityResources()
-    {
-      return new List<IdentityResource>
+        // identity-related resources (scopes)
+        public static IEnumerable<IdentityResource> GetIdentityResources()
+        {
+            return new List<IdentityResource>
             {
                 new IdentityResources.OpenId(),
                 new IdentityResources.Profile(),
@@ -58,11 +58,20 @@ namespace Nobly.IDP
                 new List<string>() {"role"} //List of claims that must be returned when app asks for roles scope
                 )
             };
-    }
+        }
+
+        public static IEnumerable<ApiResource> GetApiResources()
+        {
+            return new List<ApiResource>
+            {
+                new ApiResource("imagegalleryapi", "Image Gallery API",
+                new List<string>() { "role" } )
+            };
+        }
 
     public static IEnumerable<Client> GetClients()
-    {
-      return new List<Client>()
+        {
+            return new List<Client>()
         {
             new Client
             {
@@ -78,7 +87,8 @@ namespace Nobly.IDP
                     IdentityServerConstants.StandardScopes.OpenId,
                     IdentityServerConstants.StandardScopes.Profile,
                     IdentityServerConstants.StandardScopes.Address,
-                    "roles"
+                    "roles",
+                    "imagegalleryapi"
                 },
                 PostLogoutRedirectUris = new List<string>()
                 {
@@ -90,6 +100,6 @@ namespace Nobly.IDP
                 }
             }
         };
+        }
     }
-  }
 }
