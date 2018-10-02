@@ -45,8 +45,8 @@ namespace ImageGallery.Client.Controllers
 
                 return View(galleryIndexViewModel);
             }
-            else if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized ||
-                          response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+            else if (response.StatusCode == (System.Net.HttpStatusCode)Microsoft.AspNetCore.Http.StatusCodes.Status401Unauthorized ||
+                          response.StatusCode == (System.Net.HttpStatusCode)Microsoft.AspNetCore.Http.StatusCodes.Status403Forbidden)
             {
                 return RedirectToAction("AccessDenied", "Authorization");
             }
@@ -176,7 +176,8 @@ namespace ImageGallery.Client.Controllers
             throw new Exception($"A problem happened while calling the API: {response.ReasonPhrase}");
         }
 
-        [Authorize(Roles = "PayingUser")]
+        //[Authorize(Roles = "PayingUser")]
+        [Authorize(Policy = "CanOrderFrame")]
         public async Task<IActionResult> OrderFrame()
         {
             var discoveryClient = new DiscoveryClient("https://localhost:44332");
